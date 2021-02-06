@@ -2,8 +2,6 @@ import React, { useState } from 'react';
 import './Modal.scss';
 import { Timer } from '../timer/Timer';
 import { Cards } from '../cards/Cards';
-// import { Enrollment } from '../enrollment/Enrollment'
-// import { classNames } from 'classnames';
 
 export const Modal = ({ setShowModal }) => {
   const [payMethod, setPayMethod] = useState("card");

@@ -13,11 +13,6 @@ export const Cards = ({ payMethod }) => {
   const [cardId, setCardId] = useState(0);
   // const [cardChosen, setCardChosen] = useState(false);
 
-
-  // let renderedId = cardId;
-  // const chosenCard = cards.find(card => card.id === cardId);
-
-
   return (
     <div className="cards">
       <div className="cards__wrapper">
