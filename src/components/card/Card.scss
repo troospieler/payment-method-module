@@ -1,0 +1,99 @@
+// @mixin scaler($_property, $_toValue) {
+//   transition: #{$_property} 0.2s;
+//   &:hover {
+//     #{$_property}: $_toValue;
+//   }
+// }
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 164px;
+  height: 186px;
+
+  padding: 36px 20px;
+
+  background-color: #3C4561;
+  border: 2px solid #91ACD4;
+  box-sizing: border-box;
+  box-shadow: 8px 8px 20px rgba(24, 28, 38, 0.5);
+  border-radius: 5px;
+
+  z-index: 0;
+  transition: transform 0.3s;
+  cursor: pointer;
+
+  &.chosen::after {
+    content: url(./stroke.svg);
+    transform: translate( -50%, 48%);
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    display: block;
+  }
+
+  &__regular-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 10px;
+
+    color: #eee;
+  }
+
+  &__color-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    color: #83F6B1;
+  }
+
+  &__fill {
+    font-weight: bold;
+    font-size: 14px;
+    padding-bottom: 11px;
+  }
+
+  &__money-fill {
+    font-weight: 400;
+    font-weight: 400;
+    font-size: 22px;
+  }
+
+  &__get {
+    font-weight: bold;
+    font-size: 14px;
+    padding-bottom: 11px;
+  }
+
+  &__money-get {
+    font-weight: 400;
+    font-size: 22px;
+    // padding-bottom: 11px;
+  }
+
+  &__ellipse {
+    position: absolute;
+    bottom: 0;
+    transform: translate(-50%, 50%);
+  }
+
+  // &__stroke {
+  //   position: absolute;
+  //   bottom: 0;
+  //   transform: translate(0, 50%);
+  // }
+}
+
+.chosen {
+  border-color: #83F6B1;
+  transform: scale(1.2);
+  z-index: 1;
+
+  // @include scaler(transform, scale(1.2))
+
+  
+}

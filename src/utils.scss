@@ -1,0 +1,38 @@
+@mixin scaler($_property, $_toValue) {
+  transition: #{$_property} 0.2s;
+  &:hover {
+    #{$_property}: $_toValue;
+  }
+}
+
+@mixin button {
+  @include scaler(transform, scale(1.2));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 14px 24px;
+
+  background-color: #83F6B1;
+  border-radius: 55px;
+
+  font-family: 'Montserrat';
+  cursor: pointer;
+  outline: none;
+
+  &::after {
+    content:"";
+    display: block;
+    position: absolute;
+    width: 75px;
+    height: 28px;
+    left: 0;
+    transform: translate(50%, 50%);
+    top: 30px;
+
+    background: #83F6B1;
+    opacity: 0.4;
+    filter: blur(40px);
+    border-radius: 5px;
+  }
+
+}

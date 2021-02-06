@@ -1,0 +1,49 @@
+@import './fonts';
+@import './utils';
+
+body {
+  background-color: #1e2535;
+  color: #eeeeee;
+
+  font-family: 'Gilroy';
+  margin: 0;
+}
+
+.App {
+  padding-top: 127px;
+
+  &__button {
+    display: flex;
+    padding: 14px 24px;
+    position: absolute;
+    width: 188px;
+    height: 42px;
+    left: 45px;
+    top: 79px;
+
+    background-color: #83F6B1;
+    border-radius: 5555px;
+  }
+}
+
+#button {
+  @include button;
+
+  position: absolute;
+  border: transparent;
+
+  width: 188px;
+  height: 42px;
+  left: 45px;
+  top: 79px;
+
+}
+
+// @keyframes App-logo-spin {
+//   from {
+//     transform: rotate(0deg);
+//   }
+//   to {
+//     transform: rotate(360deg);
+//   }
+// }
