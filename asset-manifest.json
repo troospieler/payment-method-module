@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/troospieler/payment-method-module.git/static/css/main.4e80d9ef.chunk.css",
-    "main.js": "/troospieler/payment-method-module.git/static/js/main.3294ec0f.chunk.js",
-    "main.js.map": "/troospieler/payment-method-module.git/static/js/main.3294ec0f.chunk.js.map",
-    "runtime-main.js": "/troospieler/payment-method-module.git/static/js/runtime-main.dc6f8145.js",
-    "runtime-main.js.map": "/troospieler/payment-method-module.git/static/js/runtime-main.dc6f8145.js.map",
-    "static/js/2.d184f18d.chunk.js": "/troospieler/payment-method-module.git/static/js/2.d184f18d.chunk.js",
-    "static/js/2.d184f18d.chunk.js.map": "/troospieler/payment-method-module.git/static/js/2.d184f18d.chunk.js.map",
-    "static/js/3.1f2cc8e4.chunk.js": "/troospieler/payment-method-module.git/static/js/3.1f2cc8e4.chunk.js",
-    "static/js/3.1f2cc8e4.chunk.js.map": "/troospieler/payment-method-module.git/static/js/3.1f2cc8e4.chunk.js.map",
-    "index.html": "/troospieler/payment-method-module.git/index.html",
-    "static/css/main.4e80d9ef.chunk.css.map": "/troospieler/payment-method-module.git/static/css/main.4e80d9ef.chunk.css.map",
-    "static/js/2.d184f18d.chunk.js.LICENSE.txt": "/troospieler/payment-method-module.git/static/js/2.d184f18d.chunk.js.LICENSE.txt",
-    "static/media/App.scss": "/troospieler/payment-method-module.git/static/media/Montserrat-Bold.76208182.ttf",
-    "static/media/Modal.scss": "/troospieler/payment-method-module.git/static/media/close-button.1ccd1490.svg",
-    "static/media/Card.scss": "/troospieler/payment-method-module.git/static/media/stroke.6196c1ce.svg"
+    "main.css": "/payment-method-module/static/css/main.20ee0d5e.chunk.css",
+    "main.js": "/payment-method-module/static/js/main.3294ec0f.chunk.js",
+    "main.js.map": "/payment-method-module/static/js/main.3294ec0f.chunk.js.map",
+    "runtime-main.js": "/payment-method-module/static/js/runtime-main.c0f56d8c.js",
+    "runtime-main.js.map": "/payment-method-module/static/js/runtime-main.c0f56d8c.js.map",
+    "static/js/2.d184f18d.chunk.js": "/payment-method-module/static/js/2.d184f18d.chunk.js",
+    "static/js/2.d184f18d.chunk.js.map": "/payment-method-module/static/js/2.d184f18d.chunk.js.map",
+    "static/js/3.1f2cc8e4.chunk.js": "/payment-method-module/static/js/3.1f2cc8e4.chunk.js",
+    "static/js/3.1f2cc8e4.chunk.js.map": "/payment-method-module/static/js/3.1f2cc8e4.chunk.js.map",
+    "index.html": "/payment-method-module/index.html",
+    "static/css/main.20ee0d5e.chunk.css.map": "/payment-method-module/static/css/main.20ee0d5e.chunk.css.map",
+    "static/js/2.d184f18d.chunk.js.LICENSE.txt": "/payment-method-module/static/js/2.d184f18d.chunk.js.LICENSE.txt",
+    "static/media/App.scss": "/payment-method-module/static/media/Montserrat-Bold.76208182.ttf",
+    "static/media/Modal.scss": "/payment-method-module/static/media/close-button.1ccd1490.svg",
+    "static/media/Card.scss": "/payment-method-module/static/media/stroke.6196c1ce.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.dc6f8145.js",
+    "static/js/runtime-main.c0f56d8c.js",
     "static/js/2.d184f18d.chunk.js",
-    "static/css/main.4e80d9ef.chunk.css",
+    "static/css/main.20ee0d5e.chunk.css",
     "static/js/main.3294ec0f.chunk.js"
   ]
 }
