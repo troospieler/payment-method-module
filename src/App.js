@@ -9,7 +9,6 @@ function App() {
     <div className="App">
       <button
         onClick={() => {
-          console.log(showModal);
           setShowModal(true);
         }}
         id="button" 

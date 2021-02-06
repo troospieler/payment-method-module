@@ -1,3 +1,4 @@
+@import '../../utils.scss';
 
 .card {
   position: relative;
@@ -9,7 +10,7 @@
 
   padding: 36px 20px;
 
-  background-color: #3C4561;
+  background-color: $base-light-grey;
   border: 2px solid #91ACD4;
   box-sizing: border-box;
   box-shadow: 8px 8px 20px rgba(24, 28, 38, 0.5);
@@ -34,7 +35,7 @@
     align-items: center;
     padding-bottom: 10px;
 
-    color: #eee;
+    color: $base-white;
   }
 
   &__color-text {
@@ -42,7 +43,7 @@
     flex-direction: column;
     align-items: center;
 
-    color: #83F6B1;
+    color: $base-green;
   }
 
   &__fill {
@@ -66,7 +67,6 @@
   &__money-get {
     font-weight: 400;
     font-size: 22px;
-    // padding-bottom: 11px;
   }
 
   &__ellipse {
@@ -74,20 +74,10 @@
     bottom: 0;
     transform: translate(-50%, 50%);
   }
-
-  // &__stroke {
-  //   position: absolute;
-  //   bottom: 0;
-  //   transform: translate(0, 50%);
-  // }
 }
 
 .chosen {
-  border-color: #83F6B1;
+  border-color: $base-green;
   transform: scale(1.2);
   z-index: 1;
-
-  // @include scaler(transform, scale(1.2))
-
-  
 }

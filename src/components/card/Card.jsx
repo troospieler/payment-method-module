@@ -14,9 +14,7 @@ export const Card = ({fill, moneyFill, get, id, setCardId, cardId }) => {
         setCardId(id);
         setCardChosen(!cardChosen);
       }}
-      // className={classNames('card', { chosen: cardChosen })}
       className={classNames('card', { chosen: id === cardId })}
-      
     >
 
       <div className="card__regular-text">
@@ -30,18 +28,17 @@ export const Card = ({fill, moneyFill, get, id, setCardId, cardId }) => {
       </div>
 
       <div>
-        <img 
+        <img
           className={classNames('card__ellipse', {
-            "card__ellipse--chosen": id === cardId 
+            "card__ellipse--chosen": id === cardId
           })}
-          alt="" 
+          alt=""
           src={id !== cardId 
-            ? "./images/ellipse-inactive.svg" 
+            ? "./images/ellipse-inactive.svg"
             : "./images//ellipse-active.svg"
           }
         />
       </div>
-
     </div>
   )
 } 

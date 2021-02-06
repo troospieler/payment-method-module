@@ -1,34 +1,28 @@
 @import '../../utils.scss';
 
 .enrollment {
-  display: flex;
+  @include centeredFlex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
 
   &__text {
     font-weight: bold;
     font-size: 16px;
 
     &--big-colored {
-      color: #83F6B1;
+      color: $base-green;
     }
 
     &--small-colored {
       font-size: 12px;
-      color: #83F6B1;
+      color: $base-green;
     }
   }
 
   &__button {
+    margin-top: 10px;
     @include button;
 
     width: 133px;
     height: 42px;
-
-    background: #83F6B1;
-    border-radius: 5555px;
-    border: transparent;
-    position: relative;
   }
 }

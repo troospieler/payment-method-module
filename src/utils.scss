@@ -1,3 +1,16 @@
+// variables
+$base-green: #83F6B1;
+$base-white: #EEE;
+$base-light-grey: #3C4561;
+
+
+// mixins
+@mixin centeredFlex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 @mixin scaler($_property, $_toValue) {
   transition: #{$_property} 0.2s;
   &:hover {
@@ -7,13 +20,16 @@
 
 @mixin button {
   @include scaler(transform, scale(1.2));
+  position:relative;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 14px 24px;
 
-  background-color: #83F6B1;
+  background-color: $base-green;
+  color: #282A3B;
   border-radius: 55px;
+  border: transparent;
 
   font-family: 'Montserrat';
   cursor: pointer;
@@ -29,7 +45,7 @@
     transform: translate(50%, 50%);
     top: 30px;
 
-    background: #83F6B1;
+    background: $base-green;
     opacity: 0.4;
     filter: blur(40px);
     border-radius: 5px;

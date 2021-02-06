@@ -5,7 +5,8 @@ import { Cards } from '../cards/Cards';
 
 export const Modal = ({ setShowModal }) => {
   const [payMethod, setPayMethod] = useState("card");
-  const [payIcon, setPayIcon] = useState("./images/bank-card-img.svg")
+  const [payIcon, setPayIcon] = useState("./images/bank-card-img.svg");
+  const [time, setTime] = useState({ s: 0, m: 16 });
 
   const iconChanger = (value) => {
     switch (value) {
@@ -21,18 +22,17 @@ export const Modal = ({ setShowModal }) => {
   }
 
   return (
-  
     <div className="modal">
       <div className="modal__percent">+100%</div>
       <button 
         onClick={() => {
           setShowModal(false)
         }}
-        className="modal__close" 
+        className="modal__close"
         type="button"
       ></button>
       <div className="modal__timer">
-        <Timer />
+        <Timer time={time}/>
       </div>
       <h2 className="modal__heading">Увеличьте свой депозит!</h2>
       <div className="modal__select-wrapper">
@@ -41,7 +41,7 @@ export const Modal = ({ setShowModal }) => {
           alt=""
           className={`modal__img ${payMethod === "bitcoin"
             ? "modal__img--transformed" 
-            : "" 
+            : ""
             }`}
         />
         <select
@@ -61,7 +61,7 @@ export const Modal = ({ setShowModal }) => {
       <div className="modal__cards">
         <Cards payMethod={payMethod}/>
       </div>
-      
+
       <div className="modal__bottom">
         <p className="modal__info">
           При пополнении счета с банковской карты
@@ -69,9 +69,7 @@ export const Modal = ({ setShowModal }) => {
         </p>
         {/*eslint-disable-next-line jsx-a11y/anchor-is-valid*/}
         <a className="modal__link" href="#">подробнее</a>
-        
       </div>
-
     </div>
   );
 }

@@ -11,7 +11,6 @@ const cards = [
 
 export const Cards = ({ payMethod }) => {
   const [cardId, setCardId] = useState(0);
-  // const [cardChosen, setCardChosen] = useState(false);
 
   return (
     <div className="cards">

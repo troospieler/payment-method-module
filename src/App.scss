@@ -2,8 +2,9 @@
 @import './utils';
 
 body {
+  box-sizing: border-box;
   background-color: #1e2535;
-  color: #eeeeee;
+  color: $base-white;
 
   font-family: 'Gilroy';
   margin: 0;
@@ -11,6 +12,7 @@ body {
 
 .App {
   padding-top: 127px;
+  padding-bottom: 127px;
 
   &__button {
     display: flex;
@@ -21,7 +23,7 @@ body {
     left: 45px;
     top: 79px;
 
-    background-color: #83F6B1;
+    background-color: $base-green;
     border-radius: 5555px;
   }
 }
