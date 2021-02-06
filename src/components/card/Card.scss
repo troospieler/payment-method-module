@@ -1,10 +1,3 @@
-// @mixin scaler($_property, $_toValue) {
-//   transition: #{$_property} 0.2s;
-//   &:hover {
-//     #{$_property}: $_toValue;
-//   }
-// }
-
 .card {
   position: relative;
   display: flex;
