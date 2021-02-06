@@ -1,3 +1,3 @@
 # Payment Method Module
 
-[DEMO LINK](https://github.com/troospieler/payment-method-module.git)
+[DEMO LINK](https://troospieler.github.io/payment-method-module/)
