@@ -5,18 +5,18 @@ import { Cards } from '../cards/Cards';
 
 export const Modal = ({ setShowModal }) => {
   const [payMethod, setPayMethod] = useState("card");
-  const [payIcon, setPayIcon] = useState("../../../bank-card-img.svg")
+  const [payIcon, setPayIcon] = useState("./images/bank-card-img.svg")
 
   const iconChanger = (value) => {
     switch (value) {
       case 'card':
-        return "../../../bank-card-img.svg";
+        return "./images/bank-card-img.svg";
       case 'bitcoin':
-        return "../../../bitcoin-1.svg";
+        return "./images/bitcoin-1.svg";
       case 'bill':
-        return "../../../bill.svg";
+        return "./images/bill.svg";
       default :
-       return "../../../bank-card-img.svg";
+       return "./images/bank-card-img.svg";
     }
   }
 
@@ -56,7 +56,7 @@ export const Modal = ({ setShowModal }) => {
           <option value="bitcoin" className="modal__select-option">Биткоин</option>
           <option value="bill" className="modal__select-option">Выставить счет</option>
         </select>
-        <img className="modal__arrow" src="../../../arrow.svg" alt=""/>
+        <img className="modal__arrow" src="./images/arrow.svg" alt=""/>
       </div>
       <div className="modal__cards">
         <Cards payMethod={payMethod}/>

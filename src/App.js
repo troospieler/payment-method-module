@@ -18,8 +18,9 @@ function App() {
       >
       Открыть модалку
       </button>
-      {showModal && <Modal setShowModal={setShowModal}/>}
-      
+      {/* {showModal && <Modal setShowModal={setShowModal}/>} */}
+      <Modal setShowModal={setShowModal}/>
+    
     </div>
   );
 }
