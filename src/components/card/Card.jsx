@@ -11,10 +11,8 @@ export const Card = ({fill, moneyFill, get, id, setCardId, cardId }) => {
     <div
       id={id}
       onClick={() => {
-        // clearChosen();
         setCardId(id);
         setCardChosen(!cardChosen);
-        // console.log(cardChosen);
       }}
       // className={classNames('card', { chosen: cardChosen })}
       className={classNames('card', { chosen: id === cardId })}
@@ -38,8 +36,8 @@ export const Card = ({fill, moneyFill, get, id, setCardId, cardId }) => {
           })}
           alt="" 
           src={id !== cardId 
-            ? "../../../ellipse-inactive.svg" 
-            : "../../../ellipse-active.svg"
+            ? "./images/ellipse-inactive.svg" 
+            : "./images//ellipse-active.svg"
           }
         />
       </div>
