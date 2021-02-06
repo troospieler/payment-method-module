@@ -1,6 +1,6 @@
 {
   "name": "payment-method",
-  "homepage": "https://troospieler.github.io/payment-method-module/",
+  "homepage": ".",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
