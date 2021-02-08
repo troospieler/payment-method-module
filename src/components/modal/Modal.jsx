@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState,useEffect } from 'react';
 import './Modal.scss';
 import { Timer } from '../timer/Timer';
 import { Cards } from '../cards/Cards';
@@ -6,7 +6,33 @@ import { Cards } from '../cards/Cards';
 export const Modal = ({ setShowModal }) => {
   const [payMethod, setPayMethod] = useState("card");
   const [payIcon, setPayIcon] = useState("./images/bank-card-img.svg");
-  const [time, setTime] = useState({ s: 0, m: 16 });
+  const [secs, setSeconds] = useState(0);
+  const [mins, setMinutes] = useState(16);
+
+  let seconds = secs;
+  let minutes = mins;
+
+  useEffect(() => {
+    setMinutes(minutes--);
+    setSeconds(seconds--);
+    let timer;
+
+    if ( secs >= 0 && mins >= 0) {
+        timer = setInterval(() => {
+        if (seconds === -1 && mins !== 0) {
+          setMinutes(minutes--);
+          seconds = 59;
+        }
+        if (seconds !== -1) {
+          setSeconds(seconds--);
+        }
+      }, 1000);
+    }
+
+    return () => {
+      clearInterval(timer);
+    }
+  },[secs])
 
   const iconChanger = (value) => {
     switch (value) {
@@ -32,7 +58,7 @@ export const Modal = ({ setShowModal }) => {
         type="button"
       ></button>
       <div className="modal__timer">
-        <Timer time={time}/>
+        <Timer mins={mins} secs={secs}/>
       </div>
       <h2 className="modal__heading">Увеличьте свой депозит!</h2>
       <div className="modal__select-wrapper">

@@ -2,7 +2,7 @@ import React from 'react';
 
 import './Timer.scss';
 
-export const Timer = ({time}) => {
+export const Timer = ({secs, mins}) => {
 
   return (
 
@@ -10,12 +10,12 @@ export const Timer = ({time}) => {
       <img className="timer__icon" src="./images/timer.svg" alt=""/>
 
       <div className="timer__digits-wrapper">
-        <p className="timer__hours">00:</p>
+        <p className="timer__hours">&nbsp;00:</p>
         <p className="timer__minutes">
-          {time.m < 10 ? `0${time.m}:` : `${time.m}:`}
+          {mins < 10 ? `0${mins}:` : `${mins}:`}
         </p>
         <p className="timer__seconds">
-          {time.s < 10 ? `0${time.s}` : `${time.s}`}
+          {secs < 10 ? `0${secs}` : `${secs}`}
         </p>
 
       </div>

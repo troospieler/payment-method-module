@@ -1,18 +1,14 @@
 @import '../../utils.scss';
 
 .timer {
-  @include centeredFlex;
-
-  &__icon {
-    margin-right: 8px;
-  }
-
+  display: flex;
   &__digits-wrapper {
-    @include centeredFlex;
-
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: 1;
+    color: $base-green;
 
     font-size: 22px;
     font-family: 'Gilroy';
-    color: $base-green;
   }
 }
